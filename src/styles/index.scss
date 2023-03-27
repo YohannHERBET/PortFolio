@@ -11,3 +11,10 @@ body {
   top: -70px;
   visibility: hidden;
 }
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 1000;
+}

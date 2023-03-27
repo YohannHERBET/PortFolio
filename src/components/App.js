@@ -4,6 +4,7 @@ import Header from './Header';
 import ProjetSection from './ProjectSection';
 import AProposSection from './AProposSection';
 import TechnoSection from './TechnoSection';
+import ScrollToTopButton from './ScrollToTopButton';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <AProposSection />
       <TechnoSection />
       <ProjetSection />
+      <ScrollToTopButton />
     </div>
   );
 }
