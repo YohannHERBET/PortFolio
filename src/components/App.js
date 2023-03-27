@@ -1,4 +1,4 @@
-import './index.css';
+import '../styles/index.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './Header';
 import ProjetSection from './ProjectSection';
@@ -9,9 +9,9 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <ProjetSection />
       <AProposSection />
       <TechnoSection />
+      <ProjetSection />
     </div>
   );
 }

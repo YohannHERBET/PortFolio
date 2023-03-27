@@ -7,13 +7,13 @@ const ProjetCard = ({
   <Card style={{ width: '18rem' }}>
     <Card.Img variant="top" src={image} />
     <Card.Body>
-      <Card.Title>{title}</Card.Title>
+      <Card.Title className="text-center">{title}</Card.Title>
       <Card.Text>{description}</Card.Text>
       <Card.Text>
         <strong>Technos : </strong>
         {technos.join(', ')}
       </Card.Text>
-      <Button variant="primary" href={`#${title.split(' ').join('-')}`}>En savoir plus</Button>
+      <Button variant="dark" href={`#${title.split(' ').join('-')}`}>En savoir plus</Button>
     </Card.Body>
   </Card>
 );
