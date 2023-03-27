@@ -27,15 +27,15 @@ const projets = [
     description: 'Description du projet 4',
     technos: ['React', 'Node.js'],
   },
-
 ];
 
-const ProjetSection = () => (
-  <Container id="projets">
-    <h2>Mes Projets</h2>
+const ProjectSection = () => (
+  <Container className="mt-4">
+    <div className="anchor" id="projets" />
+    <h2 className="mb-5 mt-5 text-center">Mes Projets</h2>
     <Row>
       {projets.map((projet, index) => (
-        <Col key={[index]} className="mb-4">
+        <Col key={[index]} className="mb-4 d-flex justify-content-center">
           <ProjetCard {...projet} />
         </Col>
       ))}
@@ -43,4 +43,4 @@ const ProjetSection = () => (
   </Container>
 );
 
-export default ProjetSection;
+export default ProjectSection;
