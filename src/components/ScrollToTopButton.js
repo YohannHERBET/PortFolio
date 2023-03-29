@@ -26,7 +26,14 @@ const ScrollToTopButton = () => {
 
   return (
     isVisible && (
-      <Button className="scroll-to-top" onClick={scrollToTop} variant="dark">
+      <Button
+        className="scroll-to-top"
+        onClick={scrollToTop}
+        style={{
+          background: 'linear-gradient(90deg, #3D4B64 0%, #8598ce 50%, #3D4B64 100%)',
+          border: 'none',
+        }}
+      >
         &#x25B2;
       </Button>
     )

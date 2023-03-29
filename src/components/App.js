@@ -8,7 +8,7 @@ import ScrollToTopButton from './ScrollToTopButton';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App space-background">
       <Header />
       <AProposSection />
       <TechnoSection />

@@ -4,17 +4,29 @@ import PropTypes from 'prop-types';
 const ProjetCard = ({
   image, title, description, technos,
 }) => (
-  <Card style={{ width: '18rem' }}>
-    <Card.Img variant="top" src={image} />
-    <Card.Body>
-      <Card.Title className="text-center">{title}</Card.Title>
-      <Card.Text>{description}</Card.Text>
-      <Card.Text>
-        <strong>Technos : </strong>
-        {technos.join(', ')}
-      </Card.Text>
-      <Button variant="dark" href={`#${title.split(' ').join('-')}`}>En savoir plus</Button>
-    </Card.Body>
+  <Card style={{ width: '18rem', boxShadow: '0px 0px 20px #2c3548' }}>
+    <Card.Link href={`#${title.split(' ').join('-')}`} style={{ textDecoration: 'none' }}>
+      <Card.Img className="card__img-top" variant="top" src={image} />
+      <Card.Body className="card__body">
+        <Card.Title className="text-center card__title">{title}</Card.Title>
+        <Card.Text className="card__text">{description}</Card.Text>
+        <Card.Text className="card__text">
+          <strong>Technos : </strong>
+          {technos.join(', ')}
+        </Card.Text>
+        <Button
+          style={{
+            background: 'rgb(162 185 255 / 0%)',
+            color: '#d2dcff',
+            border: 'none',
+            width: '100%',
+          }}
+          className="d-flex justify-content-center card__button"
+        >
+          En savoir plus
+        </Button>
+      </Card.Body>
+    </Card.Link>
   </Card>
 );
 

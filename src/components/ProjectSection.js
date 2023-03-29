@@ -30,9 +30,9 @@ const projets = [
 ];
 
 const ProjectSection = () => (
-  <Container className="mt-4">
+  <Container style={{ 'margin-top': '120px' }}>
     <div className="anchor" id="projets" />
-    <h2 className="mb-5 mt-5 text-center">Mes Projets</h2>
+    <h1 className="mb-5 mt-5 text-center">Mes Projets</h1>
     <Row>
       {projets.map((projet, index) => (
         <Col key={[index]} className="mb-4 d-flex justify-content-center">
