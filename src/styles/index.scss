@@ -8,7 +8,7 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   min-height: 100vh;
-  padding: 100px 0;
+  padding-top: 100px;
 }
 
 h1 {
@@ -49,6 +49,21 @@ label {
 
 nav {
   font-family: 'Kanit';
+}
+
+footer {
+  width: 100%;
+  margin-top: 5rem;
+  text-align: center;
+  background: linear-gradient(260deg,#3c4e6a,rgb(135 164 199 / 99%) 50%,#3c4e6a);
+  box-shadow: rgba(37, 65, 92, 0.34) 0px 0px 40px;
+  padding: 1rem 0 1rem 0;
+
+  span {
+    color: $text;
+    font-size: .8rem;
+    text-shadow: 0 0 1px #000000b5;
+  }
 }
 
 .navbar-toggler:hover {
