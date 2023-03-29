@@ -3,7 +3,7 @@ import { Container, Badge } from 'react-bootstrap';
 const technos = ['HTML', 'CSS', 'JavaScript', 'React', 'Node.js'];
 
 const TechnoSection = () => (
-  <Container style={{ 'margin-top': '100px' }} className="text-center">
+  <Container style={{ marginTop: '100px' }} className="text-center">
     <div className="anchor" id="technos" />
     <h1 className="mt-5">Technologies</h1>
     <p className="paragraph mb-4">

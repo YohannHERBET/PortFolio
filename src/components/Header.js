@@ -14,9 +14,10 @@ const Header = () => (
     <Navbar.Toggle aria-controls="basic-navbar-nav" className="me-3" style={{ boxShadow: '1px 3px 15px #212c56a3' }} />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="align-items-center">
-        <Nav.Link href="#projets">Projets</Nav.Link>
         <Nav.Link href="#apropos">A propos</Nav.Link>
         <Nav.Link href="#technos">Technos</Nav.Link>
+        <Nav.Link href="#projets">Projets</Nav.Link>
+        <Nav.Link href="#contact">Contact</Nav.Link>
       </Nav>
     </Navbar.Collapse>
   </Navbar>

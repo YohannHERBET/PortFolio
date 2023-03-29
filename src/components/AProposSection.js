@@ -1,7 +1,7 @@
 import { Container } from 'react-bootstrap';
 
 const AProposSection = () => (
-  <Container style={{ 'margin-top': '50px' }} className="text-center">
+  <Container style={{ marginTop: '50px' }} className="text-center">
     <div className="anchor" id="apropos" />
     <h1>À propos de moi</h1>
     <p className="paragraph">
