@@ -5,6 +5,7 @@ import ProjetSection from './ProjectSection';
 import AProposSection from './AProposSection';
 import TechnoSection from './TechnoSection';
 import ScrollToTopButton from './ScrollToTopButton';
+import ContactForm from './ContactForm';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <TechnoSection />
       <ProjetSection />
       <ScrollToTopButton />
+      <ContactForm />
     </div>
   );
 }
