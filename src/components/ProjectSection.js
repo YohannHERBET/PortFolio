@@ -30,7 +30,7 @@ const projets = [
 ];
 
 const ProjectSection = () => (
-  <Container style={{ marginTop: '120px' }}>
+  <Container style={{ marginTop: '100px' }}>
     <div className="anchor" id="projets" />
     <h1 className="mb-5 mt-5 text-center">Mes Projets</h1>
     <Row>
