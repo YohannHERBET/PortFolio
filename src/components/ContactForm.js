@@ -42,7 +42,7 @@ const ContactForm = () => {
   };
 
   return (
-    <Container className="contact-form-container" style={{ marginTop: '100px' }}>
+    <Container className="contact-form-container" style={{ marginTop: '60px' }}>
       <div className="anchor" id="contact" />
       <h1 className="mb-4 text-center">Contactez-moi</h1>
       <Form onSubmit={handleSubmit} className="d-flex align-items-center flex-column w-100">
