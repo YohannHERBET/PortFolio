@@ -29,7 +29,7 @@ export default [
     technos: ['Html', 'Css', 'Javascript'],
     detailedDescription: 'J\'ai pu notamment participer au développement de la partie mobile sur but.fr et le site responsive but-cuisines.fr pendant 1 an environ, ce fut une superbe expérience. J\'ai pu proposer une vrai partie conseil et mettre en place les demandes client d\'un point de vue technique.',
     process: 'Ces projets ont été réalisés dans une dynamique agile, afin de répondre au plus vite à la demande client et coller au maximum aux diverses attentes qui sont donc toujours réévaluées au besoin.',
-    challenges: 'Ce fut une expérience très enrichissante car But fut mon premier vrai client en tant que développeur. Cela m\'a permis de mettre en place beaucoup de choses que j\'avais en tête, surtout au niveau des process et de la communication dans le métier.',
+    challenges: 'Ce fut une expérience très enrichissante car But fut mon premier vrai client en tant que développeur. Cela m\'a permis de concrétiser de nombreuses idées, en particulier en ce qui concerne les process et la communication dans le métier.',
     github: {
       href: '',
       hrefFront: '',
@@ -74,7 +74,7 @@ export default [
     title: 'O\'recipes',
     description: 'Site de recettes, possibilité d\'ajout aux favoris si la personne est connectée',
     technos: ['React', 'Redux', 'Sass', 'Node.js'],
-    detailedDescription: 'Application permettant de consulter des recettes de cuisine et de les ajouter en favoris si l\'utilisateur est connecté à son compte.',
+    detailedDescription: 'Application permettant de consulter des recettes et de les ajouter en favoris grâce à un compte utilisateur.',
     process: '',
     conceptionChoices: '',
     challenges: 'Ce petit projet réalisé en formation a été ma première mise en application de Redux.',
@@ -93,7 +93,7 @@ export default [
     detailedDescription: '',
     process: '',
     conceptionChoices: 'J\'ai fait le choix d\'une architecture et séparation des composants très simple en vue de la complexité du projet.',
-    challenges: 'C\'était ma première utilisation de React-Bootstrap. Cependant, ayant déjà utilisé plusieurs librairies de composants, j\'ai pu retrouver plusieurs similitudes à ce que j\'avais déjà utilisé auparavant comme par exemple, Material-UI ou Semantic UI.',
+    challenges: 'C\'était ma première utilisation de React-Bootstrap. Cependant, ayant déjà utilisé plusieurs librairies de composants, j\'ai pu retrouver de nombreuses similitudes à ce que j\'avais déjà utilisé auparavant comme par exemple, Material-UI ou Semantic UI.',
     github: {
       href: 'https://github.com/YohannHERBET/portfolio',
       hrefFront: '',
