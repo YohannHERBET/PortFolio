@@ -1,13 +1,14 @@
-import orecipes from './assets/img/orecipes.png';
-import portfolio from './assets/img/portfolio.png';
-import codetonasso from './assets/img/codetonasso.png';
-import organize from './assets/img/organize.png';
-import useradgents from './assets/img/useradgents.png';
-import but from './assets/img/but.png';
+import orecipes from './assets/img/orecipes.webp';
+import portfolio from './assets/img/portfolio.webp';
+import codetonasso from './assets/img/codetonasso.webp';
+import organize from './assets/img/organize.webp';
+import useradgents from './assets/img/useradgents.webp';
+import but from './assets/img/but.webp';
 
 export default [
   {
     image: useradgents,
+    alt: 'image de la page d\'accueil du site de UserAdgents',
     title: 'Site UserAdgents',
     description: 'Participation au développement du site de l\'agence',
     technos: ['Vue.js', 'Nuxt.js', 'Tailwind.css', 'Wordpress'],
@@ -24,6 +25,7 @@ export default [
   },
   {
     image: but,
+    alt: 'image de la page d\'accueil du site de But Cuisines',
     title: 'But et But Cuisine',
     description: 'Développement partie frontend sur but.fr et but-cuisines.fr',
     technos: ['Html', 'Css', 'Javascript'],
@@ -40,6 +42,7 @@ export default [
   },
   {
     image: codetonasso,
+    alt: 'image de la liste des associations de l\'application Code ton asso',
     title: 'Code ton asso',
     description: 'Plateforme de mise en relation entre des associations et des développeurs',
     technos: ['React', 'Style-Component', 'Node.js', 'Express', 'Sequelize'],
@@ -56,6 +59,7 @@ export default [
   },
   {
     image: organize,
+    alt: 'image du tableau de bord de l\'application Organize',
     title: 'Organize',
     description: 'Projet permettant de gérer son temps et son organisation, mise en place de rappels d\'événements etc..',
     technos: ['React', 'Redux', 'Sass'],
@@ -71,6 +75,7 @@ export default [
   },
   {
     image: orecipes,
+    alt: 'image de la page d\'accueil de l\'application Orecipes',
     title: 'O\'recipes',
     description: 'Site de recettes, possibilité d\'ajout aux favoris si la personne est connectée',
     technos: ['React', 'Redux', 'Sass', 'Node.js'],
@@ -87,6 +92,7 @@ export default [
   },
   {
     image: portfolio,
+    alt: 'image de ce portfolio',
     title: 'Portfolio',
     description: 'Site sur lequel vous êtes, ayant pour objectif de vous faire entrer un peu dans mon univers de développeur ;)',
     technos: ['React', 'React-Bootstrap'],
