@@ -1,6 +1,6 @@
 import { Navbar, Nav } from 'react-bootstrap';
-import linkedin from '../assets/img/linkedin.png';
-import github from '../assets/img/github.png';
+import linkedin from '../assets/img/linkedin.webp';
+import github from '../assets/img/github.webp';
 
 const Header = () => (
   <header>
@@ -25,10 +25,10 @@ const Header = () => (
           </div>
           <div className="ms-md-auto container-logo">
             <a href="https://www.linkedin.com/in/yohannherbet/" target="_blank" rel="noreferrer">
-              <img src={linkedin} alt="logo linkedin" className="logo" />
+              <img src={linkedin} alt="logo de linkedin" className="logo" />
             </a>
             <a href="https://github.com/YohannHERBET/" target="_blank" rel="noreferrer">
-              <img src={github} alt="logo github" className="logo" />
+              <img src={github} alt="logo de github" className="logo" />
             </a>
           </div>
         </Nav>

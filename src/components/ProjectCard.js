@@ -4,6 +4,7 @@ import { useState } from 'react';
 
 const ProjetCard = ({
   image,
+  alt,
   title,
   description,
   technos,
@@ -51,7 +52,7 @@ const ProjetCard = ({
     <>
       <Card onClick={handleShow} style={{ width: '18rem', boxShadow: '0px 0px 20px #2c3548' }}>
         <Card.Link href={`#${title.split(' ').join('-')}`} style={{ textDecoration: 'none' }}>
-          <Card.Img className="card__img-top" variant="top" src={image} />
+          <Card.Img className="card__img-top" variant="top" src={image} alt={alt} />
           <Card.Body className="card__body d-flex flex-column justify-content-between" style={{ height: '16rem' }}>
             <>
               <Card.Title className="text-center card__title">{title}</Card.Title>
@@ -83,7 +84,7 @@ const ProjetCard = ({
         <Modal.Body className="py-0">
           <img
             src={image}
-            alt={title}
+            alt={alt}
             style={{
               width: '100%', height: 'auto', display: 'block', marginLeft: 'auto', marginRight: 'auto',
             }}
@@ -152,6 +153,7 @@ const ProjetCard = ({
 
 ProjetCard.propTypes = {
   image: PropTypes.string.isRequired,
+  alt: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   technos: PropTypes.arrayOf(PropTypes.string).isRequired,
