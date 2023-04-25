@@ -1,6 +1,6 @@
 import { Card, Button, Modal } from 'react-bootstrap';
 import PropTypes from 'prop-types';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const ProjetCard = ({
   image,
@@ -48,11 +48,28 @@ const ProjetCard = ({
       show: but !== undefined,
     },
   ];
+
+  useEffect(() => {
+    // Function to close the modal when the back button is used
+    const handleBack = (event) => {
+      if (
+        window.location.hash !== `#${title.split(' ').join('-')}`
+      ) {
+        event.preventDefault();
+        setShow(false);
+      }
+    };
+    window.addEventListener('popstate', handleBack);
+    return () => {
+      window.removeEventListener('popstate', handleBack);
+    };
+  }, [show]);
+
   return (
     <>
       <Card onClick={handleShow} style={{ width: '18rem', boxShadow: '0px 0px 20px #2c3548' }}>
         <Card.Link href={`#${title.split(' ').join('-')}`} style={{ textDecoration: 'none' }}>
-          <Card.Img className="card__img-top" variant="top" src={image} alt={alt} />
+          <Card.Img className="card__img-top" variant="top" src={image} alt={alt} width="100%" height="auto" />
           <Card.Body className="card__body d-flex flex-column justify-content-between" style={{ height: '16rem' }}>
             <>
               <Card.Title className="text-center card__title">{title}</Card.Title>
@@ -83,6 +100,8 @@ const ProjetCard = ({
         </Modal.Header>
         <Modal.Body className="py-0">
           <img
+            width="100%"
+            height="auto"
             src={image}
             alt={alt}
             style={{
