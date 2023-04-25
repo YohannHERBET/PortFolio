@@ -103,9 +103,12 @@ footer {
 .card {
   background: linear-gradient(260deg, #0e0d0d 0%, #8598ce 50%, #161313 100%);
   transition: transform 0.3s;
+  border-radius: 15px;
 
-  &:hover {
-    transform: translateY(-10px);
+  @media (min-width: 768px) {
+    &:hover {
+      transform: translateY(-10px);
+    }
   }
   &__img-top {
     border-radius: 15px 15px 0 0;
