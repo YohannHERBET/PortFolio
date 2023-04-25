@@ -1,16 +1,5 @@
 @import './_vars';
 
-.App {
-  font-family: 'Kanit', sans-serif;
-  background-image: url("/src/assets/img/background.webp");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  min-height: 100vh;
-  padding-top: 100px;
-}
-
 h1 {
   color: $title;
   text-shadow: 0 0px 12px #455778;
@@ -113,7 +102,6 @@ footer {
 
 .card {
   background: linear-gradient(260deg, #0e0d0d 0%, #8598ce 50%, #161313 100%);
-  border-radius: 15px;
   transition: transform 0.3s;
 
   &:hover {
