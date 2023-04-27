@@ -24,15 +24,21 @@ const ContactForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    emailjs.sendForm('service_27y7r8k', 'template_dhnwowh', e.target, 'G-267E6MBSHMtIPFf')
-      .then(() => {
-        setMessageInfo('Votre message a bien été envoyé.');
-        setInfo(true);
-      })
-      .catch(() => {
-        setMessageInfo('Une erreur est survenue, veuillez réessayer.');
-        setInfo(true);
-      });
+    if (e.target.checkValidity()) {
+      emailjs.sendForm('service_27y7r8k', 'template_dhnwowh', e.target, 'G-267E6MBSHMtIPFf')
+        .then(() => {
+          setMessageInfo('Votre message a bien été envoyé.');
+          setInfo(true);
+        })
+        .catch(() => {
+          setMessageInfo('Une erreur est survenue, veuillez réessayer.');
+          setInfo(true);
+        });
+    }
+    else {
+      setMessageInfo('Veuillez remplir tous les champs correctement.');
+      setInfo(true);
+    }
     setFormState({
       name: '',
       email: '',
@@ -48,12 +54,12 @@ const ContactForm = () => {
       <Form onSubmit={handleSubmit} className="d-flex align-items-center flex-column w-100">
         <Form.Group controlId="name" as={Col} xs="12" md="8" lg="6" className="mb-3">
           <Form.Label>Nom :</Form.Label>
-          <Form.Control type="text" name="name" value={formState.name} onChange={handleChange} required />
+          <Form.Control type="text" name="name" value={formState.name} onChange={handleChange} required minLength="2" />
         </Form.Group>
 
         <Form.Group controlId="email" as={Col} xs="12" md="8" lg="6" className="mb-3">
           <Form.Label>Email :</Form.Label>
-          <Form.Control type="email" name="email" value={formState.email} onChange={handleChange} required />
+          <Form.Control type="email" name="email" value={formState.email} onChange={handleChange} required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" />
         </Form.Group>
 
         <Form.Group controlId="object" as={Col} xs="12" md="8" lg="6" className="mb-3">
@@ -63,7 +69,7 @@ const ContactForm = () => {
 
         <Form.Group controlId="message" as={Col} xs="12" md="8" lg="6">
           <Form.Label>Message :</Form.Label>
-          <Form.Control as="textarea" name="message" value={formState.message} onChange={handleChange} required />
+          <Form.Control as="textarea" name="message" value={formState.message} onChange={handleChange} required minLength="10" />
         </Form.Group>
         {info && (
           <Form.Text className={`mt-3 ${messageInfo === 'Votre message a bien été envoyé.' ? 'asSuccess' : 'asError'}`}>
